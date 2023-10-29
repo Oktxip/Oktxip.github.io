@@ -4,7 +4,6 @@ var __webpack_exports__ = {};
   !*** ./src/assets/js/pages/home.js ***!
   \*************************************/
 $(document).ready(function () {
-    
 })
 /******/ })()
 ;

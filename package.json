@@ -1,7 +1,7 @@
 {
   "name": "oktaportfolio",
   "version": "1.0.0",
-  "description": "ini adalah portfolio pertama dan gratis saya",
+  "description": "this my portfolio",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve",

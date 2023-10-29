@@ -926,13 +926,14 @@ body .branding-area {
 }
 .galery-main .galery-section .container-galery .galery-list-item .items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
 }
 .galery-main .galery-section .container-galery .galery-list-item .items .item {
-  border: 0.0625rem solid #ccc;
-  padding: 1rem;
-  width: 100%;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.26);
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.266);
 }
 
 .blog-main {

@@ -31,22 +31,4 @@ $(document).ready(function () {
   // AOS :: Start -----------------------------------------
   AOS.init();
   // AOS :: End -----------------------------------------
-  // Form Button control :: Start -----------------------------------------
-  document.getElementById("submit-button").addEventListener("click", function () {
-    const form = document.getElementById("contact-form");
-    const formData = new FormData(form);
-    fetch("https://formspree.io/f/mleyzvrp", {
-        method: "POST",
-        body: formData
-      })
-      .then(response => response.text())
-      .then(data => {
-        window.history.back();
-      })
-      .catch(error => {
-        window.location.href = "contact.html";
-        alert("Form submitted successfully..");
-      });
-  });
-  // Form Button control :: End -----------------------------------------
 })

@@ -98,17 +98,4 @@ $(document).ready(function () {
       </div>
     `;
   }
-  
-  // Display projects
-  projects.forEach((project) => {
-    const projectHTML = generateProjectHTML(project);
-    projectItems.innerHTML += projectHTML;
-  });
-  
-  // Display certificates
-  certificates.forEach((certificate) => {
-    const certificateHTML = generateCertificateHTML(certificate);
-    certificateItems.innerHTML += certificateHTML;
-  });
-  
 })

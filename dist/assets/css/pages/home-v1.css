@@ -876,9 +876,15 @@ body .branding-area {
   display: flex;
   gap: 2rem;
 }
-.index-main .project-section {
+.index-main .workexp-section {
   padding: 4rem 0;
   background-color: rgba(204, 204, 204, 0.3333333333);
+}
+.index-main .workexp-section .container-workexp {
+  padding: 4rem 3rem;
+}
+.index-main .project-section {
+  padding: 4rem 0;
 }
 .index-main .project-section .container-project {
   display: grid;

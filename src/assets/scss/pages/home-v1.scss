@@ -41,9 +41,17 @@
     }
   }
 
-  .project-section{
+  .workexp-section{
     padding: 4rem 0;
     background-color: #cccccc55;
+    .container-workexp{
+      padding: 4rem 3rem;
+
+    }
+  }
+
+  .project-section{
+    padding: 4rem 0;
     .container-project{
       display: grid;
       grid-template-columns: repeat(2,1fr);
@@ -73,6 +81,9 @@
       }
     }
   }
+
+
+  
 
 }
 

@@ -926,7 +926,7 @@ body .branding-area {
 }
 .galery-main .galery-section .container-galery .galery-list-item .items {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 .galery-main .galery-section .container-galery .galery-list-item .items .item {
@@ -934,6 +934,52 @@ body .branding-area {
   border: 0.0625rem solid rgba(0, 0, 0, 0.26);
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.266);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item img {
+  width: 100%;
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies {
+  display: flex;
+  gap: 1rem;
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies a:nth-child(n) {
+  padding: 0.125rem 1.125rem;
+  border-radius: 1.125rem;
+  color: black;
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies .CSS {
+  background-color: rgba(0, 99, 145, 0.405);
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies .SASS {
+  background-color: rgba(252, 5, 124, 0.405);
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies .PHP {
+  background-color: rgba(72, 1, 117, 0.405);
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies .Laravel {
+  background-color: rgba(255, 0, 0, 0.405);
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies .Webpack {
+  background-color: rgba(73, 197, 255, 0.405);
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies .Bootstrap {
+  background-color: rgba(65, 0, 145, 0.405);
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies .HTML {
+  background-color: rgba(255, 132, 0, 0.46);
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies .JavaScript {
+  background-color: rgba(234, 255, 0, 0.405);
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies .Node {
+  background-color: rgba(50, 255, 47, 0.405);
+}
+.galery-main .galery-section .container-galery .galery-list-item .items .item .technologies .React {
+  background-color: rgba(47, 189, 255, 0.405);
 }
 
 .blog-main {

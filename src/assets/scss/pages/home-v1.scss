@@ -103,7 +103,7 @@
         }
         .items{
           display: grid;
-          grid-template-columns: repeat(1,1fr);
+          grid-template-columns: repeat(2,1fr);
           gap: 2rem;
           
           .item{
@@ -111,6 +111,54 @@
             border: toRem(1) solid rgba(0, 0, 0, 0.26);
             padding: 2rem;
             background-color: rgba(255, 255, 255, 0.266);
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            img{
+              width: 100%;
+            }
+
+            .technologies{
+              display: flex;
+              gap: 1rem;
+              a:nth-child(n){
+                padding: toRem(2) toRem(18);
+                border-radius: toRem(18);
+                color: black;
+              }
+              .CSS{
+                background-color: rgba(0, 99, 145, 0.405);
+              }
+              .SASS{
+                background-color: rgba(252, 5, 124, 0.405);
+              }
+              .PHP{
+                background-color: rgba(72, 1, 117, 0.405);
+              }
+              .Laravel{
+                background-color: rgba(255, 0, 0, 0.405);
+              }
+              .Webpack{
+                background-color: rgba(73, 197, 255, 0.405);
+              }
+              .Bootstrap{
+                background-color: rgba(65, 0, 145, 0.405);
+              }
+              .HTML{
+                background-color: rgba(255, 132, 0, 0.46);
+              }
+              .JavaScript{
+                background-color: rgba(234, 255, 0, 0.405);
+              }
+              .Node{
+                background-color: rgba(50, 255, 47, 0.405);
+              }
+              .React{
+                background-color: rgba(47, 189, 255, 0.405);
+              }
+            }
           }
         }
       }

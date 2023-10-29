@@ -1,0 +1,15 @@
+// For global styling on all home pages
+body{
+  .branding-area{
+    position: fixed;
+    z-index: -100;
+    width: toRem(550);
+    opacity: 30%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: toRem(55);
+    bottom: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,14 @@
+.rotate-left{
+    transition: all linear .1s;
+    transform: rotate(0deg) scale(1);
+}
+.rotate-left:hover{
+    transform: rotate(-4deg) scale(1.1);
+}
+.rotate-right{
+    transition: all linear .1s;
+    transform: rotate(0deg) scale(1);
+}
+.rotate-right:hover{
+    transform: rotate(4deg) scale(1.1);
+}

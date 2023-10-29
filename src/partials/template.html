@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Template Name: - 
+Author: -
+Website: -
+Contact: -
+License: -
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okta Pratama || Portfolio</title>
+  <link rel="shortcut icon" href="assets/media/images/opicon.png" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+
+  <!-- Start::Global Styles (used by all pages) -->
+  <link href="assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
+  <!-- End::Global Styles -->
+  <!-- Start::Page Styles (used by this page) -->
+  <link href="assets/css/pages/home-v1.css" rel="stylesheet" type="text/css" />
+  <!-- End::Page Styles -->
+  <!-- Start::Page font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- End::Page font awesome -->
+  <!-- Start::Page Animated On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- End::Page Animated On Scroll -->
+</head>
+
+<body>
+  <!-- Start:: header navbar section -->
+  {{> layout/header.html}}
+  <!-- End:: header navbar section -->
+
+  <img src="assets/media/images/opblack.png" alt="" class="branding-area">
+
+  <section class="gapper"></section>
+  {{#if @partial-block}} {{> @partial-block }} {{/if}}
+
+  <!-- Start:: header navbar section -->
+  {{> layout/footer.html}}
+  <!-- End:: header navbar section -->
+    
+
+  <!-- Start::Global Bundle Scripts (used by all pages) -->
+  <script src="assets/js/scripts.bundle.js"></script>
+  <!-- End::Global Bundle Scripts -->
+  <!-- Start::Page script data -->
+  <script src="assets/js/custom/list-data.js"></script>
+  <!-- End::Page script data -->
+  <!-- Start::Page Scripts (used by this page) -->
+  <script src="assets/js/pages/home.js"></script>
+  <!-- End::Page Scripts -->
+  <!-- Start::Page AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- End::Page AOS -->
+</body>
+
+</html>

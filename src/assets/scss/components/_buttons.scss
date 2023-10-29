@@ -1,0 +1,63 @@
+.btn-black{
+  background-color: black;
+  color: white;
+  border: toRem(1) solid black;
+  min-width: toRem(140);
+  text-align: center;
+  padding: toRem(7) 1rem;
+  transition: all linear .2s;
+  transform: scale(1);
+}
+.btn-black:hover{
+  transform: scale(1.1);
+}
+.btn-white{
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  border: toRem(1) solid rgb(0, 0, 0);
+  min-width: toRem(140);
+  text-align: center;
+  padding: toRem(7);
+  transition: all linear .2s;
+  transform: scale(1);
+}
+.btn-white:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: toRem(1) solid rgb(0, 0, 0);
+  min-width: toRem(140);
+  transform: scale(1.1);
+}
+
+.button-list{
+  border: none;
+  color:rgb(98, 98, 98) ;
+  background: transparent;
+  transition: all linear .2s;
+  transform: scale(1);
+}
+.button-list:hover{
+  font-weight: 700;
+  color: black;
+  transform: scale(1.1);
+}
+.button-list-active{
+  font-weight: 700;
+  color: black;
+}
+
+.btn-sender-email{
+  background-color: black;
+  color: white;
+  border: toRem(1) solid black;
+  min-width: toRem(140);
+  text-align: center;
+  padding: toRem(7) 1rem;
+  transition: all linear .2s;
+}
+.btn-sender-email:hover{
+  background-color: rgb(255, 252, 252);
+  color: rgb(0, 0, 0);
+  border: toRem(1) solid rgb(0, 0, 0);
+  transition: all linear .2s;
+}

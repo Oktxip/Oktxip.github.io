@@ -1,0 +1,179 @@
+// Initialize first
+@import "../init";
+
+// Import files  
+@import "home";
+
+// Add your style here
+.gapper {
+  width: 100%;
+  padding-top: toRem(76.22);
+}
+
+.index-main{
+
+  .hero-section {
+    .container-hero {
+      padding: 4rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+  
+      .hero-title {
+        color: black;
+      }
+  
+      .hero-subtitle {
+        padding: 2rem 0;
+        font-size: toRem(15);
+        font-weight: 300;
+        color: black;
+        max-width: toRem(700);
+      }
+  
+      .hero-button {
+        padding: 1rem 0;
+        display: flex;
+        gap: 2rem;
+      }
+  
+    }
+  }
+
+  .project-section{
+    padding: 4rem 0;
+    background-color: #cccccc55;
+    .container-project{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+  
+      .project-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+  
+        .content-title{
+          color: black;
+          padding: 0 1rem;
+        }
+  
+        .content-subtitle{
+          padding: 1rem;
+        }
+  
+        .content-button{
+          display: flex;
+          padding: 1rem;
+        }
+      }
+  
+      .project-image{
+        padding: 1rem;
+        background-color: #00000063;
+      }
+    }
+  }
+
+}
+
+.galery-main{
+
+  .galery-section {
+    .container-galery {
+      padding: 4rem 0;
+  
+      .galery-selection {
+        border-bottom: toRem(1) solid grey;
+        gap: 2rem;
+        display: flex;
+      }
+  
+      .galery-list-item {
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 0;
+  
+        .list-active {
+          display: block !important;
+        }
+    
+        .list {
+          display: none;
+          transition: all linear .6;
+        }
+  
+        .items {
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          gap: 2rem;
+          
+  
+          .item {
+            border: toRem(1) solid #ccc;
+            padding: 1rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.blog-main{
+  position: relative;
+}
+
+.contact-main{
+  position: relative;
+
+  .contact-section{
+    padding: 4rem 0;
+
+    .container-contact{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      color: black;
+
+      .form-contact{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+        width: 28rem;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0);
+        color: black;
+        border: toRem(1) solid black;
+        border-radius: toRem(5);
+
+        .form-controller{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          gap: 0.3rem;
+          
+          .form-input{
+            border: toRem(1) solid black;
+            border-radius: toRem(2) toRem(10);
+            padding: toRem(4) toRem(10);
+            background:rgba(0, 0, 0, 0);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.blog-main{
+  padding: 4rem;
+  .blog-section{
+    padding: 4rem 0;
+    .container-blog{
+      display: flex;
+      padding: 4rem 0;
+    }
+  }
+}

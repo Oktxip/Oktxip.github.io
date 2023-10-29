@@ -1,0 +1,28 @@
+{{#> partials/template.html }}
+<section class="contact-main">
+
+    <!-- Start:: Hero section -->
+    <section class="contact-section">
+      <div class="container container-contact">
+        <form id="contact-form" action="https://formspree.io/f/mleyzvrp" method="POST" class="form-contact">
+          <label class="form-controller">
+            Your name:
+            <input class="form-input" type="text" name="name">
+          </label>
+          <label class="form-controller">
+            Your email:
+            <input class="form-input" type="email" name="email">
+          </label>
+          <label class="form-controller">
+            Your message:
+            <textarea class="form-input" name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button onclick="<script>location'contact.html'</script>" class="btn-sender-email" type="button" id="submit-button">Send</button>
+        </form>
+      </div>
+    </section>
+    <!-- End:: Hero section -->
+
+</section>
+{{/ partials/template.html }}

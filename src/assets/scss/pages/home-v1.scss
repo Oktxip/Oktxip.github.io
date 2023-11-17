@@ -10,7 +10,7 @@
   padding-top: toRem(76.22);
 }
 
-.index-main{
+.index-main {
 
   .hero-section {
     .container-hero {
@@ -19,11 +19,11 @@
       flex-direction: column;
       align-items: center;
       position: relative;
-  
+
       .hero-title {
         color: black;
       }
-  
+
       .hero-subtitle {
         padding: 2rem 0;
         font-size: toRem(15);
@@ -31,51 +31,58 @@
         color: black;
         max-width: toRem(700);
       }
-  
+
       .hero-button {
         padding: 1rem 0;
         display: flex;
         gap: 2rem;
       }
-  
+
     }
   }
 
-  .workexp-section{
+  .workexp-section {
     padding: 4rem 0;
     background-color: #cccccc55;
-    .container-workexp{
+
+    .container-workexp {
       padding: 4rem 3rem;
 
     }
   }
 
-  .project-section{
+  .project-section {
     padding: 4rem 0;
-    .container-project{
+
+    .container-project {
       display: grid;
-      grid-template-columns: repeat(2,1fr);
-  
-      .project-content{
+      grid-template-columns: repeat(2, 1fr);
+      
+      @include media-breakpoint-down(lg){
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+      }
+
+      .project-content {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-  
-        .content-title{
+        grid-template-columns: repeat(1, 1fr);
+
+        .content-title {
           color: black;
           padding: 0 1rem;
         }
-  
-        .content-subtitle{
+
+        .content-subtitle {
           padding: 1rem;
         }
-  
-        .content-button{
+
+        .content-button {
           display: flex;
           padding: 1rem;
         }
       }
-  
-      .project-image{
+
+      .project-image {
         padding: 1rem;
         background-color: #00000063;
       }
@@ -83,90 +90,107 @@
   }
 
 
-  
+
 
 }
 
-.galery-main{
+.galery-main {
 
   .galery-section {
     .container-galery {
       padding: 4rem 0;
-  
+
       .galery-selection {
         border-bottom: toRem(1) solid grey;
         gap: 2rem;
         display: flex;
       }
-  
+
       .galery-list-item {
         display: flex;
         justify-content: space-around;
         padding: 2rem 0;
-  
+
         .list-active {
           display: block !important;
         }
-    
+
         .list {
           display: none;
           transition: all linear .6;
         }
-        .items{
+
+        .items {
           display: grid;
-          grid-template-columns: repeat(2,1fr);
+          grid-template-columns: repeat(2, 1fr);
+
+          @include media-breakpoint-down(lg){
+            grid-template-columns: repeat(1, 1fr);
+          }
           gap: 2rem;
-          
-          .item{
+
+          .item {
             border-radius: toRem(5);
             border: toRem(1) solid rgba(0, 0, 0, 0.26);
             padding: 2rem;
             background-color: rgba(255, 255, 255, 0.266);
             display: grid;
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
             gap: 1rem;
             flex-wrap: wrap;
 
-            img{
+            img {
               width: 100%;
             }
 
-            .technologies{
+            .technologies {
               display: flex;
               gap: 1rem;
-              a:nth-child(n){
+              flex-wrap: wrap;
+
+              a:nth-child(n) {
                 padding: toRem(2) toRem(18);
                 border-radius: toRem(18);
                 color: black;
               }
-              .CSS{
+
+              .CSS {
                 background-color: rgba(0, 99, 145, 0.405);
               }
-              .SASS{
+
+              .SASS {
                 background-color: rgba(252, 5, 124, 0.405);
               }
-              .PHP{
+
+              .PHP {
                 background-color: rgba(72, 1, 117, 0.405);
               }
-              .Laravel{
+
+              .Laravel {
                 background-color: rgba(255, 0, 0, 0.405);
               }
-              .Webpack{
+
+              .Webpack {
                 background-color: rgba(73, 197, 255, 0.405);
               }
-              .Bootstrap{
+
+              .Bootstrap {
                 background-color: rgba(65, 0, 145, 0.405);
               }
-              .HTML{
+
+              .HTML {
                 background-color: rgba(255, 132, 0, 0.46);
               }
-              .JavaScript{
+
+              .JavaScript {
                 background-color: rgba(234, 255, 0, 0.405);
               }
-              .Node{
+
+              .Node {
                 background-color: rgba(50, 255, 47, 0.405);
               }
-              .React{
+
+              .React {
                 background-color: rgba(47, 189, 255, 0.405);
               }
             }
@@ -178,17 +202,14 @@
 
 }
 
-.blog-main{
-  position: relative;
-}
 
-.contact-main{
+.contact-main {
   position: relative;
 
-  .contact-section{
-    padding: 4rem 0;
+  .contact-section {
+    padding: 7rem 0;
 
-    .container-contact{
+    .container-contact {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -196,9 +217,9 @@
       gap: 1rem;
       color: black;
 
-      .form-contact{
+      .form-contact {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
         width: 28rem;
         padding: 2rem;
@@ -207,16 +228,19 @@
         border: toRem(1) solid black;
         border-radius: toRem(5);
 
-        .form-controller{
+        .form-controller {
           display: grid;
-          grid-template-columns: repeat(1,1fr);
+          grid-template-columns: repeat(1, 1fr);
           gap: 0.3rem;
-          
-          .form-input{
+
+          .form-input {
             border: toRem(1) solid black;
             border-radius: toRem(2) toRem(10);
             padding: toRem(4) toRem(10);
-            background:rgba(0, 0, 0, 0);
+            background: rgba(0, 0, 0, 0);
+          }
+          .form-input--textarea {
+            height: 4rem;
           }
         }
       }
@@ -225,11 +249,13 @@
 }
 
 
-.blog-main{
+.blog-main {
   padding: 4rem;
-  .blog-section{
+
+  .blog-section {
     padding: 4rem 0;
-    .container-blog{
+
+    .container-blog {
       display: flex;
       padding: 4rem 0;
     }

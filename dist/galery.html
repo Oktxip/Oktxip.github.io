@@ -39,17 +39,17 @@ License: -
   <header>
     <nav class="navbar">
       <div class="container container-navbar">
-        <div data-aos-duration="1500" data-aos-delay="300" data-aos="zoom-out-right" class="navbar-brand">
+        <div class="navbar-brand">
           <img src="assets/media/images/opwhite.png" alt="logo white" class="navbar-brand-img">
           <div class="navbar-brand-name">
             Okta Pratama
           </div>
         </div>
-        <div data-aos-duration="1500" data-aos-delay="300" data-aos="zoom-out-left" class="navbar-link">
-          <a href="index.html" class="navbar-link-item rotate-left"><i class="fa fa-home"></i> home</a>
-          <a href="galery.html" class="navbar-link-item rotate-right"><i class="fa fa-file"></i> galerys</a>
-          <a href="blog.html" class="navbar-link-item rotate-left"><i class="fa fa-home"></i> blog</a>
-          <a href="contact.html" class="navbar-link-item rotate-right"><i class="fa fa-comments"></i> Contact</a>
+        <div class="navbar-link">
+          <a href="index.html" class="navbar-link-item navbar-link-hover-animation"><i class="fa fa-home"></i> home</a>
+          <a href="galery.html" class="navbar-link-item navbar-link-hover-animation"><i class="fa fa-image"></i> galerys</a>
+          <a href="blog.html" class="navbar-link-item navbar-link-hover-animation"><i class="fa fa-globe"></i> blog</a>
+          <a href="contact.html" class="navbar-link-item navbar-link-hover-animation"><i class="fa fa-comments"></i> Contact</a>
         </div>
         <div data-aos-duration="1500" data-aos-delay="300" data-aos="zoom-out-left" class="navbar-hamburger">
           <span></span>
@@ -59,13 +59,19 @@ License: -
       </div>
     </nav>
   </header>
-  </body>
-  </html>
   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const navbarHamburger = document.querySelector('.navbar-hamburger');
+    const navbarLinks = document.querySelector('.navbar-link');
   
+    navbarHamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      navbarLinks.classList.toggle('active');
+    });
+  });
   
-  
-  <!-- End:: header navbar section -->
+  </script>  <!-- End:: header navbar section -->
 
   <img src="assets/media/images/opblack.png" alt="" class="branding-area">
 
@@ -148,7 +154,7 @@ License: -
             about me
           </div>
           <div class="footer-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, sint? Eius, cum possimus molestiae nihil voluptatibus quo veritatis iure repellat sapiente architecto explicabo assumenda modi at aperiam eos, quas fugit!
+            I am a man who was born and raised in Probolinggo. Since childhood, I have shown a deep interest in the world of technology, especially software development. I am a Muslim, I am known as a person who is very talented in tinkering with software.
           </div>
         </div>
         

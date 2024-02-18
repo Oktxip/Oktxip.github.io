@@ -1,45 +1,123 @@
-header{
-  // @include media-breakpoint-down(lg){
-  // }
+header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  .navbar{
+
+  .navbar {
     background-color: black;
     padding: 1rem;
-    .container-navbar{
+
+    .container-navbar {
       display: flex;
-      .navbar-brand{
+
+      .navbar-brand {
         display: flex;
         gap: 0.5rem;
         margin-right: 2rem;
-        .navbar-brand-img{
+
+        .navbar-brand-img {
           height: 2rem;
         }
-        .navbar-brand-name{
+
+        .navbar-brand-name {
           font-weight: 700;
           height: 2rem;
           color: white;
         }
       }
-      .navbar-link{
+
+      .navbar-link {
         display: flex;
         gap: 2rem;
-        .navbar-link-item{
+
+        @include media-breakpoint-down(lg){
+          top: 0;
+          left: -100vw;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          padding:  6rem 10% 2rem;
+          position: absolute;
+          background-color: black;
+          z-index: -1;
+          opacity: 0;
+
+          transition: all linear .4s;
+          &.active{
+            left: 0;
+            opacity: 1;
+          }
+        }
+
+        .navbar-link-item {
           color: rgba(255, 255, 255, 0.418);
           border-bottom: 1px solid rgba(0, 0, 0, 0);
-        }
-        .navbar-link-item:hover{
-          color: rgb(255, 255, 255);
-          border-bottom: 1px solid rgb(255, 255, 255);
-        }
-        .navbar-link-active{
-          color: rgb(255, 255, 255) !important;
-          border-bottom: 1px solid rgb(255, 255, 255);
+          padding: 0;
+          transition: all linear .2s;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          @include media-breakpoint-up(lg){
+            &:hover {
+              color: rgb(255, 255, 255);
+              border-bottom: 1px solid rgb(255, 255, 255);
+            }
+  
+            &.navbar-link-active {
+              color: rgb(255, 255, 255) !important;
+              border-bottom: 1px solid rgb(255, 255, 255);
+            }
+          }
+          @include media-breakpoint-down(lg){
+            &:hover {
+              color: rgb(255, 255, 255);
+              padding-left:1rem ;
+              border-left: 1px solid rgb(255, 255, 255);
+            }
+  
+            &.navbar-link-active {
+              color: rgb(255, 255, 255) !important;
+              padding-left:1rem ;
+              border-left: 1px solid rgb(255, 255, 255);
+            }
+
+          }
         }
       }
-      .navbar-hamburger{
+
+      .navbar-hamburger {
         display: none;
+
+        @include media-breakpoint-down(lg) {
+          display: block;
+          cursor: pointer;
+
+          span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &.active {
+            span:nth-child(1) {
+              transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            span:nth-child(2) {
+              opacity: 0;
+            }
+
+            span:nth-child(3) {
+              transform: rotate(-45deg) translate(6px, -7px);
+            }
+          }
+        }
       }
     }
   }

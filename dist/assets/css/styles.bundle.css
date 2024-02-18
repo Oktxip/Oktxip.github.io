@@ -822,6 +822,10 @@ ul {
   transform: rotate(4deg) scale(1.1);
 }
 
+.navbar-link-hover-animation:hover {
+  transform: scale(1.1);
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -15669,20 +15673,83 @@ header .navbar .container-navbar .navbar-link {
   display: flex;
   gap: 2rem;
 }
+@media (max-width: 991.98px) {
+  header .navbar .container-navbar .navbar-link {
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 6rem 10% 2rem;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    opacity: 0;
+    transition: all linear 0.4s;
+  }
+  header .navbar .container-navbar .navbar-link.active {
+    left: 0;
+    opacity: 1;
+  }
+}
 header .navbar .container-navbar .navbar-link .navbar-link-item {
   color: rgba(255, 255, 255, 0.418);
   border-bottom: 1px solid rgba(0, 0, 0, 0);
+  padding: 0;
+  transition: all linear 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-header .navbar .container-navbar .navbar-link .navbar-link-item:hover {
-  color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(255, 255, 255);
+@media (min-width: 992px) {
+  header .navbar .container-navbar .navbar-link .navbar-link-item:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  header .navbar .container-navbar .navbar-link .navbar-link-item.navbar-link-active {
+    color: rgb(255, 255, 255) !important;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
 }
-header .navbar .container-navbar .navbar-link .navbar-link-active {
-  color: rgb(255, 255, 255) !important;
-  border-bottom: 1px solid rgb(255, 255, 255);
+@media (max-width: 991.98px) {
+  header .navbar .container-navbar .navbar-link .navbar-link-item:hover {
+    color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    border-left: 1px solid rgb(255, 255, 255);
+  }
+  header .navbar .container-navbar .navbar-link .navbar-link-item.navbar-link-active {
+    color: rgb(255, 255, 255) !important;
+    padding-left: 1rem;
+    border-left: 1px solid rgb(255, 255, 255);
+  }
 }
 header .navbar .container-navbar .navbar-hamburger {
   display: none;
+}
+@media (max-width: 991.98px) {
+  header .navbar .container-navbar .navbar-hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  header .navbar .container-navbar .navbar-hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  header .navbar .container-navbar .navbar-hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  header .navbar .container-navbar .navbar-hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  header .navbar .container-navbar .navbar-hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -7px);
+  }
 }
 
 footer {

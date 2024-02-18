@@ -13,8 +13,9 @@
 
 .index-main {
   position: relative;
-
+  
   .hero-header{
+    
     /* Config */
     $color-bg: #000;
     $color-particle: #fff;
@@ -38,7 +39,11 @@
       border-radius: 50%;
     }
 
-    
+    .animation-wrapper{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
     .particle, .particle:after {
       background: transparent;
     }
@@ -84,6 +89,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden  ;
 
     .hero-content {
       text-align: center;
@@ -257,7 +264,6 @@
   }
 
 }
-
 
 .contact-main {
   position: relative;
